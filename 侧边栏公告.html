@@ -1,0 +1,80 @@
+<script type="text/javascript" defer="defer">
+    // 设置公告
+    var news = '个人博客还未迁移完成，<a href="https://anthony-dong.gitee.io/">原地址快来看看(点击查看)</a>';
+
+    // 设置博客信息
+    var myprofile = [{
+        blogName: "anthony-dong",
+        blogAvatar: "https://blog-static.cnblogs.com/files/anthony-dong/ico.ico",
+        blogSign: "Stay hungry,Stay foolish.",
+        blogFollow: "follow('30807ee3-3273-4cff-72df-08d619358b99')",
+        QQ: "1220949046",
+        Github: "https://github.com/Anthony-Dong",
+        WeChat: "https://tyut.oss-cn-beijing.aliyuncs.com/edu2/contact.jpg"
+    }];
+
+    // 设置首页轮播
+    var mybanner = [{
+            url: "https://github.com/Anthony-Dong",
+            img: "https://blog-static.cnblogs.com/files/anthony-dong/github_link.ico",
+            title: "Github"
+        },
+
+        {
+            url: "https://gitee.com/Anthony-Dong",
+            img: "https://blog-static.cnblogs.com/files/anthony-dong/gitee_link.ico",
+            title: "码云"
+        },
+
+        {
+            url: "https://cloudstudio.net/",
+            img: "https://blog-static.cnblogs.com/files/anthony-dong/cloud_studio_link.ico",
+            title: "腾讯-Cloud Studio"
+        },
+
+        {
+            url: "https://tianchi.aliyun.com/home",
+            img: "https://blog-static.cnblogs.com/files/anthony-dong/tianchi_link.ico",
+            title: "阿里云-天池"
+        },
+    ];
+
+    // 设置导航栏扩展 
+
+    var mynav = [{
+            id: "blog_nav_cnblogs",
+            url: "https://home.cnblogs.com",
+            title: "园子"
+        },
+        {
+            id: "blog_nav_maintain",
+            url: "https://www.cnblogs.com/anthony-dong/articles/12249231.html",
+            title: "分享"
+        },
+
+        {
+            id: "blog_nav_frieds",
+            url: "https://www.cnblogs.com/anthony-dong/articles/12249129.html",
+            title: "介绍"
+        },
+        {
+            id: "blog_nav_theme",
+            url: "javascript:changeTheme()",
+            title: "切换主题"
+        }
+    ];
+    loadNewsinfo(news); //公告
+    setFavio(myprofile); // 网页tab图像
+    loadThemeColor(); //导入主题颜色
+    extendNav(mynav); // 导航栏扩展
+    loadBanner(mybanner); //首页轮播
+    setPostSideBar(); //侧边栏目录
+    loadMobileContent(); //移动端目录功能栏
+    blankTarget(); //文章链接新窗口打开
+    copyCode(); //代码块复制
+    tableScorll(); //表格滚动
+    mymd(); //自定义语法
+    ninghtTip(); //夜间模式提醒
+    owoEmoji(); //owo表情插件
+    myscroll();
+</script>
